@@ -39,10 +39,25 @@
           <div>2</div>
           <h3>Получатели</h3>
         </div>
-        <div>
+        <div class="edit-distribution__recipients-container">
+          <div class="edit-distribution__recipients-setting">
 
-<!--          -->
-
+          </div>
+          <div class="edit-distribution__recipients-block">
+            <div class="edit-distribution__recipients-amount">
+              <div>
+                <img src="@/assets/svg/fi-sr-user.svg" alt="">
+                <span>Получателей: 234</span>
+              </div>
+              <button>Посмотреть всех</button>
+            </div>
+            <div class="edit-distribution__recipients-avatars">
+              <img v-for="i in 12" src="@/assets/image/avatar.png" alt="avatar">
+            </div>
+          </div>
+        </div>
+        <div class="edit-distribution__recipients-conditions">
+          <DistributionCondition />
         </div>
       </div>
       <div class="edit-distribution__recipients">
@@ -84,6 +99,7 @@
 <script setup lang="ts">
 
 import DistrButton from "@/components/UI/DistrButton/DistrButton.vue";
+import DistributionCondition from "@/components/DistributionCondition/DistributionCondition.vue";
 </script>
 
 <style lang="scss" scoped>

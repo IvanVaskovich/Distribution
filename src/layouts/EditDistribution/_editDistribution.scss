@@ -99,6 +99,63 @@
         border: 1px solid #E7ECEF;
         border-radius: 7px;
         padding: 24px 20px;
+
+        &-container {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            gap: 8px;
+        }
+
+        &-setting {
+
+        }
+
+        &-block {
+            border: 1px solid #D7EFFD;
+            border-radius: 5px;
+        }
+
+        &-amount {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 8px 12px;
+            background: #0188DA0D;
+
+            & > div {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                & > span {
+                    font-size: 12px;
+                }
+            }
+
+            & > button {
+                font-size: 12px;
+                color: #0188DA;
+            }
+        }
+
+        &-avatars {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 14px;
+            padding: 8px 12px;
+
+            & > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-conditions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
     }
 
     &__buttons {
